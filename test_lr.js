@@ -1,14 +1,17 @@
 //////////////////////////////////////////////////////////////////
 /// sample code using logistic regression for classification
-//  some datasets can be found at 
+//  some datasets can be found at
 //    https://archive.ics.uci.edu/ml/datasets.html
 //
 //  you have to manually add the header(features) to each data file
 //////////////////////////////////////////////////////////////////
 'use strict';
 
-var learningjs = require('learningjs.js');
-var data_util = require("data_util.js");
+// var learningjs = require('./learningjs.js');
+// var data_util = require("./data_util.js");
+
+var learningjs = require('./index').learning;
+var data_util = require("./index").dataUtil;
 
 if(process.argv.length<4) {
   console.log('usage: %s %s training_file test_file', process.argv[0], process.argv[1]);
@@ -24,7 +27,7 @@ console.log('=== TEST:%s ===', fn_test);
 data_util.loadRealFile(fn, function(D) {
 
   //normalize data
-  data_util.normalize(D.data, D.nfeatures); 
+  data_util.normalize(D.data, D.nfeatures);
 
 
   //logistic regression. following params are optional
@@ -50,4 +53,4 @@ data_util.loadRealFile(fn, function(D) {
       });
     }
   });
-}); 
+});

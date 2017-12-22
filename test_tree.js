@@ -1,14 +1,14 @@
 //////////////////////////////////////////////////////////////////
 /// sample code using decision tree for classification
-//  some datasets can be found at 
+//  some datasets can be found at
 //    https://archive.ics.uci.edu/ml/datasets.html
 //
 //  you have to manually add the header(features) to each data file
 //////////////////////////////////////////////////////////////////
 'use strict';
 
-var learningjs = require('./js/learningjs.js');
-var data_util = require("./js/data_util.js");
+var learningjs = require('./learningjs.js');
+var data_util = require("./data_util.js");
 
 if(process.argv.length<4) {
   console.log('usage: %s %s training_file test_file', process.argv[0], process.argv[1]);
@@ -43,4 +43,4 @@ data_util.loadTextFile(fn, function(D) {
       });
     }
   });
-}); 
+});
