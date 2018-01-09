@@ -1,20 +1,25 @@
 {
-  "name": "learningjs",
-  "version": "0.1.1",
+  "name":        "learningjs",
+  "version":     "0.1.1",
   "description": "logistic regression/c4.5 decision tree algorithm",
-  "main": "learningjs.js",
+  "main":        "learningjs.js",
+
   "scripts": {
-    "test_tree": "node test_lr.js",
+    "test":          "mocha",
+    "test_tree":     "node test_lr.js",
     "test_logistic": "node test_tree.js"
   },
+
   "repository": {
     "type": "git",
-    "url": "https://github.com/yandongliu/learningjs"
+    "url":  "https://github.com/yandongliu/learningjs"
   },
+
   "dependencies": {
     "underscore": "*",
-    "lazy": "*"
+    "lazy":       "*"
   },
+
   "keywords": [
     "logistic regression",
     "decision tree",
@@ -22,8 +27,10 @@
     "classifier",
     "c4.5"
   ],
-  "author": "Yandong Liu",
+
+  "author":  "Yandong Liu",
   "license": "MIT",
+
   "bugs": {
     "url": "https://github.com/yandongliu/learningjs/issues"
   }
