@@ -5,6 +5,7 @@
   "main":        "learningjs.js",
 
   "scripts": {
+    "mocha":         "mocha",
     "test":          "mocha",
     "test_tree":     "node test_lr.js",
     "test_logistic": "node test_tree.js"
