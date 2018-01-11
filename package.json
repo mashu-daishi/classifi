@@ -1,7 +1,7 @@
 {
   "name":        "learningjs",
   "version":     "0.1.1",
-  "description": "logistic regression/c4.5 decision tree algorithm",
+  "description": "This is a fork of https://github.com/yandongliu/learningjs. Designed to update coding and patterns",
   "main":        "learningjs.js",
 
   "scripts": {
@@ -13,7 +13,7 @@
 
   "repository": {
     "type": "git",
-    "url":  "https://github.com/yandongliu/learningjs"
+    "url":  "https://github.com/mashu-daishi/learningjs"
   },
 
   "dependencies": {
@@ -29,10 +29,10 @@
     "c4.5"
   ],
 
-  "author":  "Yandong Liu",
+  "author":  "Matthew Young",
   "license": "MIT",
 
   "bugs": {
-    "url": "https://github.com/yandongliu/learningjs/issues"
+    "url": "https://github.com/mashu-daishi/learningjs/issues"
   }
 }
