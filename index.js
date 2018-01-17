@@ -2,5 +2,5 @@
 
 module.exports = {
   'learning' : require( './lib/learning' ),
-  'dataUtil' : require( './data_util' )
+  'dataUtil' : require( './lib/data_util' )
 };
