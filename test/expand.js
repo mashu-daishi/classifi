@@ -28,31 +28,30 @@ describe( 'logistic', () => {
       D.l2_weight     = 0.0;
       D.iterations    = 1000;
 
-      new learningjs.logistic().train( D, ( model, err ) => {
-        results.time.end = process.hrtime( results.time.start )[ 1 ] / 1000000;
+      new learningjs.logistic().train( D )
+			.then( model => {
+				results.time.end = process.hrtime( results.time.start )[ 1 ] / 1000000;
 
-        if ( err ) {
-          results.error = err;
+				let accuracyObj = model.calcAccuracy( D.data, D.targets );
 
-          return done();
-        }
+				results.success[ 'training' ] = {
+					'correct': accuracyObj.n_correct,
+					'total': accuracyObj.n_samples,
+					'acc': accuracyObj.accuracy
+				};
 
-        model.calcAccuracy( D.data, D.targets, ( acc, correct, total ) => {
-          results.success[ 'training' ] = {
-            correct, total, acc
-          };
-        });
+				data_util.loadRealFile( testing, 'species', T => {
+					let testAccuracy = model.calcAccuracy( T.data, T.targets )
 
-        data_util.loadRealFile( testing, 'species', T => {
-          model.calcAccuracy( T.data, T.targets, ( acc, correct, total ) => {
-            results.success[ 'testing' ] = {
-              correct, total, acc
-            };
-          });
-        });
+					results.success[ 'testing' ] = {
+						'correct': testAccuracy.n_correct,
+						'total':   testAccuracy.n_samples,
+						'acc':     testAccuracy.accuracy
+					};
+				});
 
-        done();
-      } );
+				done();
+			} );
     } );
   } );
 
