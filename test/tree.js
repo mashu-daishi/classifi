@@ -6,7 +6,7 @@ const data_util  = helper.main.dataUtil;
 
 require( 'should' );
 
-describe( 'tree.js -- This one can take a bit', () => {
+describe.skip( 'tree.js -- This one can take a bit', () => {
   describe( 'refactor test', () => {
 
     let results = {

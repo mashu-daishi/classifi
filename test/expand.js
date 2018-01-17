@@ -75,7 +75,7 @@ describe( 'logistic', () => {
   } );
 } );
 
-describe( 'tree', () => {
+describe.skip( 'tree', () => {
 	let results = {
 		'error':   null,
 		'success': {},

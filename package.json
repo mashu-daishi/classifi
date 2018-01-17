@@ -1,14 +1,12 @@
 {
-  "name":        "learningjs",
+  "name":        "classifi",
   "version":     "0.1.1",
-  "description": "This is a fork of https://github.com/yandongliu/learningjs. Designed to update coding and patterns",
+  "description": "This is a fork of https://github.com/yandongliu/learningjs. Designed to update coding and patterns. Uses the C4.5 classifing algorithm",
   "main":        "learningjs.js",
 
   "scripts": {
-    "mocha":         "mocha",
-    "test":          "mocha",
-    "test_tree":     "node test_lr.js",
-    "test_logistic": "node test_tree.js"
+    "mocha": "mocha",
+    "test":  "mocha"
   },
 
   "repository": {
