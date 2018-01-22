@@ -1,8 +1,8 @@
 {
   "name":        "classifi",
-  "version":     "0.1.1",
+  "version":     "0.1.2",
   "description": "This is a fork of https://github.com/yandongliu/learningjs. Designed to update coding and patterns. Uses the C4.5 classifing algorithm",
-  "main":        "learningjs.js",
+  "main":        "index.js",
 
   "scripts": {
     "mocha": "mocha",
@@ -11,7 +11,7 @@
 
   "repository": {
     "type": "git",
-    "url":  "https://github.com/mashu-daishi/learningjs"
+    "url":  "https://github.com/mashu-daishi/classifi"
   },
 
   "dependencies": {
@@ -31,6 +31,6 @@
   "license": "MIT",
 
   "bugs": {
-    "url": "https://github.com/mashu-daishi/learningjs/issues"
+    "url": "https://github.com/mashu-daishi/classifi/issues"
   }
 }

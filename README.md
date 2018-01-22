@@ -17,6 +17,11 @@ text, real, text, text, feature_type
 'Overcast',73,'High', 'Weak', 'Yes'
 </pre>
 
+# Installing
+```
+npm install classifi
+```
+
 # Usage
 Data loading: learningjs.data_util provides two methods:
 
